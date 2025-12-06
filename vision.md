@@ -60,7 +60,7 @@
 - Оркестрации/compose нет на MVP.
 
 ## 8. Подход к конфигурированию
-- Источник: переменные окружения (`8197814475:AAEho86FpbVNd_mj4uvbb5OCmlJ3uTqKge4`, `PAYMENT_PROVIDER_TOKEN`, опционально `BASE_URL`).
+- Источник: переменные окружения (`BOT_TOKEN`, `PAYMENT_PROVIDER_TOKEN`, опционально `BASE_URL`).
 - Парсинг в `config.py`, прокидываем в сервисы/handlers.
 - Отдельных конфиг-файлов нет на MVP; `.env` можно локально по желанию.
 
