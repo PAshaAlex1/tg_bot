@@ -34,3 +34,4 @@ if (-not $remote) {
 
 Write-Host "`n✓ Готово!" -ForegroundColor Green
 
+
