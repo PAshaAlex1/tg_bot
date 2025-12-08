@@ -10,3 +10,5 @@ def get_item_by_id(item_id: int) -> Optional[CatalogItem]:
         if item.id == item_id:
             return item
     return None
+
+

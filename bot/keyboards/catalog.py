@@ -8,3 +8,5 @@ def get_category_keyboard() -> InlineKeyboardMarkup:
             [InlineKeyboardButton(text="Десерты", callback_data="category:Десерты")],
         ]
     )
+
+

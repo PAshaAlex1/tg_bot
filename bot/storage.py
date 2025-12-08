@@ -1,5 +1,6 @@
+
 from dataclasses import dataclass
-from typing import List
+from typing import List, Dict
 
 @dataclass
 class CatalogItem:
@@ -99,6 +100,23 @@ _catalog: List[CatalogItem] = [
         photo_file_id="",
     ),
 ]
+
+
+# --- Корзина ---
+
+@dataclass
+class CartItem:
+    item_id: int
+    weight: float
+    quantity: int
+
+@dataclass
+class Cart:
+    user_id: int
+    items: List[CartItem]
+
+# In-memory хранилище корзин: user_id -> Cart
+carts: Dict[int, Cart] = {}
 
 def get_catalog() -> List[CatalogItem]:
     return _catalog

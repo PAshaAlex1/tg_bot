@@ -24,3 +24,5 @@
 - Миграция дальше: добавить БД (SQLite/PostgreSQL), вынести конфиг в файлы/Secret Manager, включить линтеры/formatter и pre-commit, добавить docker-compose/оркестрацию при необходимости.
 
 
+
+
