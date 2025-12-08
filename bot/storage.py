@@ -121,5 +121,12 @@ carts: Dict[int, Cart] = {}
 def get_catalog() -> List[CatalogItem]:
     return _catalog
 
+
 def get_categories() -> List[str]:
     return ["Бенто", "Торты", "Десерты"]
+
+def get_item_by_id(item_id: int) -> CatalogItem | None:
+    for item in _catalog:
+        if item.id == item_id:
+            return item
+    return None

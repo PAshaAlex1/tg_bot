@@ -2,7 +2,7 @@ import logging
 import asyncio
 from aiogram import Bot, Dispatcher
 from bot.config import Config
-from bot.handlers import start, catalog, cart, order
+from bot.handlers import start, catalog, cart, order, admin
 
 logging.basicConfig(
     level=logging.INFO,
@@ -21,6 +21,7 @@ async def main():
         dp.include_router(catalog.router)
         dp.include_router(cart.router)
         dp.include_router(order.router)
+        dp.include_router(admin.router)
         
         logger.info("Бот запущен")
         await dp.start_polling(bot, skip_updates=True)
